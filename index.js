@@ -2,9 +2,10 @@ const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
-
+const util = require("util");
+const writeFile = util.promisify(fs.writeFile)
 // array of questions for user
-const questions = () =>
+const questions = () => {
 inquirer.prompt([
     {
         type: 'input',
@@ -27,9 +28,10 @@ inquirer.prompt([
         message: 'Please give usage information?',
       },
       {
-        type: 'input',
+        type: 'list',
         name: 'license',
         message: 'Choose a license',
+        choices: ["MIT", "GPL", "Apache 2.0", "None"]
       },
       {
         type: 'input',
@@ -47,21 +49,27 @@ inquirer.prompt([
         message: 'Please give your username',
       },
 
-]);
-const answers = {
-    title: "",
-    description: "",
-    installation: "",
-    usage: "",
-    license: "",
-    contribution: "",
-    test: "",
-    questions: ""
-  };
+]).then(answers => {
+  let readMeString = generateMarkdown(answers)
+  writeToFile("README.md", readMeString)
+
+})
+}
+// const answers = {
+//     title: "",
+//     description: "",
+//     installation: "",
+//     usage: "",
+//     license: "",
+//     contribution: "",
+//     test: "",
+//     questions: ""
+//   };
   
 // function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile(fileName,data)
+  writeFile(path.join(__dirname, "/dist/", fileName),data)
+  .then(() => console.log("Readme file generated")) 
   };
 
 
