@@ -41,7 +41,7 @@ ${data.contribution}
 ${data.test}
 
 # Questions 
-${data.questions}
+If you have any questions, please contact me via [GitHub](https://github.com/${data.questions}) or [email](${data.email}).
 `;
 }
 

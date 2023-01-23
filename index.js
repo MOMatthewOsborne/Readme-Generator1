@@ -46,7 +46,12 @@ inquirer.prompt([
       {
         type: 'input',
         name: 'questions',
-        message: 'Please give your username',
+        message: 'Please give your GitHub username',
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: 'Please give your Email Adress',
       },
 
 ]).then(answers => {
