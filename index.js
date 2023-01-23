@@ -15,17 +15,17 @@ inquirer.prompt([
       {
         type: 'input',
         name: 'description',
-        message: 'Please give a description of your project?',
+        message: 'Please give a description of your project',
       },
       {
         type: 'input',
         name: 'installation',
-        message: 'Please give any installation information?',
+        message: 'Please give any installation information',
       },
       {
         type: 'input',
         name: 'usage',
-        message: 'Please give usage information?',
+        message: 'Please give usage information',
       },
       {
         type: 'list',
@@ -36,12 +36,12 @@ inquirer.prompt([
       {
         type: 'input',
         name: 'contribution',
-        message: 'Please give contribution',
+        message: 'Please give information on contribution',
       },
       {
         type: 'input',
         name: 'test',
-        message: 'Please give test',
+        message: 'Please give any relevant information on testings',
       },
       {
         type: 'input',
@@ -51,7 +51,7 @@ inquirer.prompt([
       {
         type: 'input',
         name: 'email',
-        message: 'Please give your Email Adress',
+        message: 'Please give your Email Address',
       },
 
 ]).then(answers => {
@@ -60,16 +60,6 @@ inquirer.prompt([
 
 })
 }
-// const answers = {
-//     title: "",
-//     description: "",
-//     installation: "",
-//     usage: "",
-//     license: "",
-//     contribution: "",
-//     test: "",
-//     questions: ""
-//   };
   
 // function to write README file
 function writeToFile(fileName, data) {
@@ -81,8 +71,7 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     questions()
-    
-    
+        
 }
 
 // function call to initialize program
