@@ -1,6 +1,6 @@
 # Readme-Generator1
 
-This app creates a README file based on a number of prompts. It uses Node.js and inquirer.
+This app creates a README file based on a number of prompts. It uses Node.js and the inquirer package.
 
 # Challenges
 
