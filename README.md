@@ -1,13 +1,30 @@
-# Readme-Generator1
+# Readme Generator
+[![MIT](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
 
-This app creates a README file based on a number of prompts. It uses Node.js and inquirer.
 
-# Challenges
+ This app creates a README file based on a number of prompts. It uses Node.js and inquirer.
+# Table of Contents
+- [Usage](#usage)
+- [Installation](#installation)
+- [License](#installation)
+- [Contribution](#contribution)
+- [Tests](#tests)
+- [Questions](#questions)
 
-My main challege was trying to learn how to get the data into the .MD file. Also using node and dealing with dependencies.
+# Usage
+ N/A
 
-# What I learned
+# Installation
+ None
 
-This is my first project using both Node.js and inquirer. I feel like I have learned a lot and have a little bit more confidence with them. I feel like I have learned a basic understanding of both.
+# License
+MIT
 
-Here is a link to the walkthrough video. [Link](https://watch.screencastify.com/v/6H2ASvFH7lrKbEIfgpXb)
+# Contribution
+N/A
+
+# Tests 
+N/A
+
+# Questions 
+If you have any questions, please contact me via [GitHub](https://github.com/MoMatthewOsborne) or [email](myemail@service.com).
