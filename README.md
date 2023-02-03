@@ -11,4 +11,5 @@ My main challege was trying to learn how to get the data into the .MD file. Also
 This is my first project using both Node.js and inquirer. I feel like I have learned a lot and have a little bit more confidence with them. I feel like I have learned a basic understanding of both.
 
 Here is a link to the walkthrough video. [Link](https://watch.screencastify.com/v/6H2ASvFH7lrKbEIfgpXb)
-Here is a link to a sample README created with the app. [Link](https://watch.screencastify.com/v/6H2ASvFH7lrKbEIfgpXb)
+
+Here is a link to a sample README created with the app. [Link](https://github.com/MOMatthewOsborne/Readme-Generator1/blob/main/SampleREADME.md)
